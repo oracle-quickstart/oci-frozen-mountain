@@ -27,7 +27,7 @@ variable "mp_listing_resource_id" {
 
 variable "mp_listing_resource_version" {
   // default = "1.0"
-  default     = "Frozen_Mountain_1.7.1.15966-020720201941"
+  default     = "1.7.1.15966-020720201941"
   description = "Marketplace Listing Package/Resource Version"
 }
 
