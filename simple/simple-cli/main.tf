@@ -71,9 +71,17 @@ output "instance_private_ip" {
 }
 
 output "instance_http_url_signaling" {
-  value = "https://${oci_core_instance.liveswitch-vm.public_ip}:8080"
+  value = "http://${oci_core_instance.liveswitch-vm.public_ip}:8080"
 }
 
 output "instance_https_url_signaling" {
   value = "https://${oci_core_instance.liveswitch-vm.public_ip}:8443"
+}
+
+output "instance_http_url_gateway" {
+  value = "http://${oci_core_instance.liveswitch-vm.public_ip}:9090"
+}
+
+output "instance_https_url_gateway" {
+  value = "https://${oci_core_instance.liveswitch-vm.public_ip}:9443"
 }
