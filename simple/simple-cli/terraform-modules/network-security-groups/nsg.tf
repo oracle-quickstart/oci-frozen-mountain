@@ -24,8 +24,8 @@ resource "oci_core_network_security_group_security_rule" "rule_ingress_tcp443" {
 
   tcp_options {
     destination_port_range {
-      min = 443
-      max = 443
+      min = 8080
+      max = 8080
     }
   }
 }
