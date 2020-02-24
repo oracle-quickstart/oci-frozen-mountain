@@ -30,6 +30,51 @@ resource "oci_core_network_security_group_security_rule" "rule_ingress_tcp443" {
   }
 }
 
+resource "oci_core_network_security_group_security_rule" "rule_ingress_tcp443" {
+  network_security_group_id = oci_core_network_security_group.nsg.id
+  protocol                  = "6"
+  direction                 = "INGRESS"
+  source                    = var.nsg_whitelist_ip != "" ? var.nsg_whitelist_ip : "0.0.0.0/0"
+  stateless                 = false
+
+  tcp_options {
+    destination_port_range {
+      min = 8443
+      max = 8443
+    }
+  }
+}
+
+resource "oci_core_network_security_group_security_rule" "rule_ingress_tcp443" {
+  network_security_group_id = oci_core_network_security_group.nsg.id
+  protocol                  = "6"
+  direction                 = "INGRESS"
+  source                    = var.nsg_whitelist_ip != "" ? var.nsg_whitelist_ip : "0.0.0.0/0"
+  stateless                 = false
+
+  tcp_options {
+    destination_port_range {
+      min = 9090
+      max = 9090
+    }
+  }
+}
+
+resource "oci_core_network_security_group_security_rule" "rule_ingress_tcp443" {
+  network_security_group_id = oci_core_network_security_group.nsg.id
+  protocol                  = "6"
+  direction                 = "INGRESS"
+  source                    = var.nsg_whitelist_ip != "" ? var.nsg_whitelist_ip : "0.0.0.0/0"
+  stateless                 = false
+
+  tcp_options {
+    destination_port_range {
+      min = 9443
+      max = 9443
+    }
+  }
+}
+
 resource "oci_core_network_security_group_security_rule" "rule_ingress_all_icmp_type3_code4" {
   network_security_group_id = oci_core_network_security_group.nsg.id
   protocol                  = 1
