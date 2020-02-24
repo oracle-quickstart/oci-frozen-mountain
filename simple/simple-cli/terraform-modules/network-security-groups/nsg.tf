@@ -75,6 +75,21 @@ resource "oci_core_network_security_group_security_rule" "rule_ingress_tcp443" {
   }
 }
 
+resource "oci_core_network_security_group_security_rule" "rule_ingress_tcp443" {
+  network_security_group_id = oci_core_network_security_group.nsg.id
+  protocol                  = "17"
+  direction                 = "INGRESS"
+  source                    = var.nsg_whitelist_ip != "" ? var.nsg_whitelist_ip : "0.0.0.0/0"
+  stateless                 = false
+
+  tudp_options {
+    destination_port_range {
+      min = 49152
+      max = 65535
+    }
+  }
+}
+
 resource "oci_core_network_security_group_security_rule" "rule_ingress_all_icmp_type3_code4" {
   network_security_group_id = oci_core_network_security_group.nsg.id
   protocol                  = 1
