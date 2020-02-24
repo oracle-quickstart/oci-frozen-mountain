@@ -60,8 +60,6 @@ resource "oci_core_instance" "liveswitch-vm" {
   metadata = {
     ssh_authorized_keys = var.ssh_public_key
   }
-
-
 }
 
 output "instance_public_ip" {
