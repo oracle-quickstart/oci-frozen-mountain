@@ -82,7 +82,7 @@ resource "oci_core_network_security_group_security_rule" "rule_ingress_udp49152_
   source                    = var.nsg_whitelist_ip != "" ? var.nsg_whitelist_ip : "0.0.0.0/0"
   stateless                 = false
 
-  tudp_options {
+  udp_options {
     destination_port_range {
       min = 49152
       max = 65535
