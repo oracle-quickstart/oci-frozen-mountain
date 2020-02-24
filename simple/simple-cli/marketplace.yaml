@@ -103,7 +103,7 @@ variables:
   vm_display_name:
     type: string
     required: true
-    default: my-instance
+    default: liveswitch-instance
     title: Instance Name
     description: The name of the Instance
 
@@ -283,7 +283,7 @@ variables:
   routetable_display_name:
     type: string
     required: true
-    default: my-route-table
+    default: liveswitch-route-table
     title: Route Table
     description: The name of the Route Table
 
