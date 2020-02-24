@@ -37,7 +37,7 @@ data "oci_identity_availability_domain" "ad" {
   ad_number      = var.availability_domain_number
 }
 
-resource "oci_core_instance" "simple-vm" {
+resource "oci_core_instance" "liveswitch-vm" {
   depends_on = [module.marketplace_subscription]
 
   availability_domain = (var.availability_domain_name != "" ? var.availability_domain_name : data.oci_identity_availability_domain.ad.name)
@@ -65,14 +65,14 @@ resource "oci_core_instance" "simple-vm" {
 }
 
 output "instance_public_ip" {
-  value = oci_core_instance.simple-vm.public_ip
+  value = oci_core_instance.liveswitch-vm.public_ip
 }
 
 output "instance_private_ip" {
-  value = oci_core_instance.simple-vm.private_ip
+  value = oci_core_instance.liveswitch-vm.private_ip
 }
 
 output "instance_https_url" {
-  value = "https://${oci_core_instance.simple-vm.public_ip}"
+  value = "https://${oci_core_instance.liveswitch-vm.public_ip}"
 }
 
