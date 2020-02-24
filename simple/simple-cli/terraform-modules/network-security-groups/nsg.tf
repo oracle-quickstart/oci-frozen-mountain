@@ -15,7 +15,7 @@ resource "oci_core_network_security_group_security_rule" "rule_egress_all" {
   destination = "0.0.0.0/0"
 }
 
-resource "oci_core_network_security_group_security_rule" "rule_ingress_tcp443" {
+resource "oci_core_network_security_group_security_rule" "rule_ingress_tcp8080" {
   network_security_group_id = oci_core_network_security_group.nsg.id
   protocol                  = "6"
   direction                 = "INGRESS"
@@ -30,7 +30,7 @@ resource "oci_core_network_security_group_security_rule" "rule_ingress_tcp443" {
   }
 }
 
-resource "oci_core_network_security_group_security_rule" "rule_ingress_tcp443" {
+resource "oci_core_network_security_group_security_rule" "rule_ingress_tcp8443" {
   network_security_group_id = oci_core_network_security_group.nsg.id
   protocol                  = "6"
   direction                 = "INGRESS"
@@ -45,7 +45,7 @@ resource "oci_core_network_security_group_security_rule" "rule_ingress_tcp443" {
   }
 }
 
-resource "oci_core_network_security_group_security_rule" "rule_ingress_tcp443" {
+resource "oci_core_network_security_group_security_rule" "rule_ingress_tcp9090" {
   network_security_group_id = oci_core_network_security_group.nsg.id
   protocol                  = "6"
   direction                 = "INGRESS"
@@ -60,7 +60,7 @@ resource "oci_core_network_security_group_security_rule" "rule_ingress_tcp443" {
   }
 }
 
-resource "oci_core_network_security_group_security_rule" "rule_ingress_tcp443" {
+resource "oci_core_network_security_group_security_rule" "rule_ingress_tcp9443" {
   network_security_group_id = oci_core_network_security_group.nsg.id
   protocol                  = "6"
   direction                 = "INGRESS"
@@ -75,7 +75,7 @@ resource "oci_core_network_security_group_security_rule" "rule_ingress_tcp443" {
   }
 }
 
-resource "oci_core_network_security_group_security_rule" "rule_ingress_tcp443" {
+resource "oci_core_network_security_group_security_rule" "rule_ingress_udp49152_65535" {
   network_security_group_id = oci_core_network_security_group.nsg.id
   protocol                  = "17"
   direction                 = "INGRESS"
