@@ -37,7 +37,7 @@ variable "mp_listing_resource_version" {
 
 variable "vm_display_name" {
   description = "Instance Name"
-  default     = "simple"
+  default     = "LiveSwitch-Server"
 }
 
 variable "vm_compute_shape" {
@@ -73,7 +73,7 @@ variable "vcn_id" {
 
 variable "vcn_display_name" {
   description = "VCN Name"
-  default     = "simple-vcn"
+  default     = "LiveSwitch-vcn"
 }
 
 variable "vcn_cidr_block" {
@@ -83,7 +83,7 @@ variable "vcn_cidr_block" {
 
 variable "vcn_dns_label" {
   description = "VCN DNS Label"
-  default     = "simple"
+  default     = "liveswitch"
 }
 
 variable "subnet_type" {
@@ -102,7 +102,7 @@ variable "subnet_id" {
 
 variable "subnet_display_name" {
   description = "Subnet Name"
-  default     = "simple-subnet"
+  default     = "LiveSwitch-subnet"
 }
 
 variable "subnet_cidr_block" {
@@ -130,10 +130,10 @@ variable "nsg_whitelist_ip" {
 
 variable "nsg_display_name" {
   description = "Network Security Groups - Name"
-  default     = "simple-security-group"
+  default     = "liveswitch-security-group"
 }
 
 variable "routetable_display_name" {
   description = "Route table Name"
-  default     = "simple-route-table"
+  default     = "liveswitch-route-table"
 }
