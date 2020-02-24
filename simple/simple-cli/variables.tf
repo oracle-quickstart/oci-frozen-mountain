@@ -130,7 +130,7 @@ variable "nsg_whitelist_ip" {
 
 variable "nsg_display_name" {
   description = "Network Security Groups - Name"
-  default     = "liveswitch-security-group"
+  default     = "liveswitch-network-security-group"
 }
 
 variable "routetable_display_name" {
