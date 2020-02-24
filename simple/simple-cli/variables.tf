@@ -15,19 +15,19 @@ variable "region" {
 
 variable "mp_listing_id" {
   // default = "ocid1.appcataloglisting.oc1.."
-  default     = "ocid1.appcataloglisting.oc1..aaaaaaaapram7bsdh37gly4oavh42iqih6faoqqqmotpddyz4a44c4wgk7ja"
+  default     = "ocid1.appcataloglisting.oc1..aaaaaaaac6isylx5kestbbigaarbm2ssqlhwzfno7xp3s2imzfgke6jjr65a"
   description = "Marketplace Listing OCID"
 }
 
 variable "mp_listing_resource_id" {
   // default = "ocid1.image.oc1.."
-  default     = "ocid1.image.oc1..aaaaaaaa2es7kqqgmmjyymzdaaeqmmehrprg6gdjxs4on5lpzwiv64przksa"
+  default     = "ocid1.image.oc1..aaaaaaaap5hoq5iw3o5arc6g6serwgwyi64tcwbq6k74vuxbuzg7vh2wczwa"
   description = "Marketplace Listing Image OCID"
 }
 
 variable "mp_listing_resource_version" {
   // default = "1.0"
-  default     = "Oracle_Cloud_Developer_Image_19.11"
+  default     = "Frozen_Mountain_1.7.1.15966-020720201941"
   description = "Marketplace Listing Package/Resource Version"
 }
 
