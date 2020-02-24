@@ -16,7 +16,7 @@ Within the simple application project there are 3 modules:
 
 - [simple-cli](https://github.com/oracle-quickstart/oci-frozen-mountain/tree/master/simple/simple-cli): launch a simple VM that subscribes to a Marketplace Image running from Terraform CLI.
 - [simple-orm](https://github.com/oracle-quickstart/oci-frozen-mountain/tree/master/simple/simple-orm): Responsible for packaging the simple-cli module in OCI [Resource Manager Stack](https://docs.cloud.oracle.com/iaas/Content/ResourceManager/Tasks/managingstacksandjobs.htm) format.
-- [terraform-modules](terraform-modules): contains a list of re-usable terraform modules for managing infrastructure resources like vcn, subnets, security, etc.
+- [terraform-modules](https://github.com/oracle-quickstart/oci-frozen-mountain/tree/master/simple/terraform-modules): contains a list of re-usable terraform modules for managing infrastructure resources like vcn, subnets, security, etc.
 
 ## Prerequisites
 
