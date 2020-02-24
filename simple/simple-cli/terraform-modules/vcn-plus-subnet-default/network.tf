@@ -26,7 +26,6 @@ resource "oci_core_default_route_table" "default_route_table" {
   }
 }
 
-
 resource "oci_core_subnet" "public_subnet" {
   count          = var.use_existing_network ? 0:1
   compartment_id             = var.compartment_ocid
