@@ -71,6 +71,7 @@ output "instance_private_ip" {
 }
 
 output "instance_https_url" {
-  value = "https://${oci_core_instance.liveswitch-vm.public_ip}"
+  value = "https://${oci_core_instance.liveswitch-vm.public_ip}:8080"
+  value = "https://${oci_core_instance.liveswitch-vm.public_ip}:8443"
 }
 
