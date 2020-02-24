@@ -42,7 +42,7 @@ variable "vm_display_name" {
 
 variable "vm_compute_shape" {
   description = "Compute Shape"
-  default     = "VM.Standard2.2" //2 cores
+  default     = "VM.Standard2.1" //2 cores
 }
 
 variable "availability_domain_name" {
